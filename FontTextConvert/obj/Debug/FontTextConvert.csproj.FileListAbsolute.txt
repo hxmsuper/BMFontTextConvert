@@ -7,3 +7,12 @@ C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConver
 C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.exe
 C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.pdb
 C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.Form1.resources
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\bin\Debug\FontTextConvert.exe.config
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.exe
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.pdb
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\bin\Debug\FontTextConvert.exe
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\bin\Debug\FontTextConvert.pdb
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.csprojResolveAssemblyReference.cache
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.Form1.resources
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.Properties.Resources.resources
+C:\Users\super3\Documents\GitHub\FontTextConvertProject\BMFontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.csproj.GenerateResource.Cache

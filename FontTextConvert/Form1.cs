@@ -76,7 +76,7 @@ namespace FontTextConvert
                     textBox3.Text = str.Substring(s2, e2 - s2);
                     f1List.Add(string.Format("#fontFace=\"{0}\" #fontSize={1}",textBox2.Text,textBox3.Text));
                 }
-                else if(readerList[i].Contains("common"))
+                else if(str.Contains("common"))
                 {
                     
                     int s1 = str.IndexOf("lineHeight=") + 11;
@@ -90,37 +90,48 @@ namespace FontTextConvert
                     f1List.Add(string.Format("#lineHeight={0} #baseLine={1} textureWidth={2} #textureHeight={3}", lineHeight, baseLine,textureWidth,textureHeight));
                     
                 }
-                else if (readerList[i].Contains("page id=0 file"))
+                else if (str.Contains("page id=0 file"))
                 {
                     textureFile = str.Substring(str.IndexOf("file=") + 5);
                     f1List.Add(string.Format("#textureFile={0}",textureFile));
                 }
-                else if(readerList[i].Contains("chars count"))
+                else if(str.Contains("chars count"))
                 {
                     charCount = str.Substring(str.IndexOf("count=") + 6 );
                     f1List.Add(string.Format("#charsCount={0}", charCount));
                 }
-                else if (readerList[i].Contains("char id"))//找出charid句
+                else if (str.Contains("char id"))//找出charid句
                 {
-                    string str2 = readerList[i].Substring(readerList[i].IndexOf("id"));
+                    //string str2 = readerList[i].Substring(readerList[i].IndexOf("id"));
                     
-                    string[] items = str2.Split(new char[]{' '});  //切分每一句
+                    //string[] items = str2.Split(new char[]{' '});  //切分每一句
                     itemValues = new string[itemNames.Length];
-                    itemDic.Clear();//清理临时字典 
-                    for (int m = 0; m < items.Length; m++)//析出各个元素
-                    {
-                        string currentStr = items[m];
-                        for (int n = 0;n<itemNames.Length;n++)
-                        {
-                            string aname = itemNames[n];
-                            if (currentStr.Contains(aname))
-                            { 
-                              string result = currentStr.Substring(currentStr.IndexOf("=")+1);
-                              itemValues[m] = result;
-                               break;
-                            }
-                        }  
-                    }
+                    //itemDic.Clear();//清理临时字典 
+                    //for (int m = 0; m < items.Length; m++)//析出各个元素
+                    //{
+                    //    string currentStr = items[m];
+                    //    for (int n = 0;n<itemNames.Length;n++)
+                    //    {
+                    //        string aname = itemNames[n];
+                    //        if (currentStr.Contains(aname))
+                    //        { 
+                    //          string result = currentStr.Substring(currentStr.IndexOf("=")+1);
+                    //          itemValues[m] = result;
+                    //           break;
+                    //        }
+                    //    }  
+                    //}
+
+                    itemValues[0] = GetWord("id=", "x=", str);
+                    itemValues[1] = GetWord("x=", "y=", str);
+                    itemValues[2] = GetWord("y=", "width=", str);
+                    itemValues[3] = GetWord("width=", "height=", str);
+                    itemValues[4] = GetWord("height=", "xoffset=", str);
+                    itemValues[5] = GetWord("xoffset=", "yoffset=", str);
+                    itemValues[6] = GetWord("yoffset=", "xadvance=", str);
+                    itemValues[7] = GetWord("xadvance=", "page=", str);
+                    //itemValues[8] = GetWord("page=", "x=", str);
+                    //itemValues[9] = GetWord("id=", "x=", str);
                     
 
                     BMFontDataItem adataItem = new BMFontDataItem(itemValues[0], itemValues[1], itemValues[2], itemValues[3], itemValues[4], itemValues[5], itemValues[6], itemValues[7], itemValues[8], itemValues[9]);
@@ -144,6 +155,11 @@ namespace FontTextConvert
 
         }
 
+        private string GetWord(string start,string end,string str)
+        {
+            string result = str.Substring(str.IndexOf(start)+start.Count(),str.IndexOf(end)-str.IndexOf(start)-start.Count());
+            return result;
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
