@@ -1,0 +1,9 @@
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\bin\Debug\FontTextConvert.exe.config
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\bin\Debug\FontTextConvert.exe
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\bin\Debug\FontTextConvert.pdb
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.csprojResolveAssemblyReference.cache
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.Properties.Resources.resources
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.csproj.GenerateResource.Cache
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.exe
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.pdb
+C:\SVN\VisualStudio_SVN\FontTextConvert\FontTextConvert\obj\Debug\FontTextConvert.Form1.resources
