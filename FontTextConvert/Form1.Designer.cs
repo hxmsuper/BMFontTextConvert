@@ -40,11 +40,10 @@
             // textBox1
             // 
             this.textBox1.AllowDrop = true;
-            this.textBox1.Location = new System.Drawing.Point(134, 68);
+            this.textBox1.Location = new System.Drawing.Point(125, 76);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(271, 35);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox1_DragDrop);
             this.textBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox1_DragEnter);
             // 
@@ -52,7 +51,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(64, 381);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 67);
+            this.button1.Size = new System.Drawing.Size(888, 67);
             this.button1.TabIndex = 1;
             this.button1.Text = "Convert";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,16 +59,15 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(737, 42);
+            this.textBox2.Location = new System.Drawing.Point(710, 68);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(242, 35);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Fontname";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(737, 99);
+            this.textBox3.Location = new System.Drawing.Point(710, 139);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(242, 35);
             this.textBox3.TabIndex = 3;
@@ -77,9 +75,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(803, 381);
+            this.button2.Location = new System.Drawing.Point(60, 491);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 67);
+            this.button2.Size = new System.Drawing.Size(892, 67);
             this.button2.TabIndex = 4;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
@@ -98,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 472);
+            this.ClientSize = new System.Drawing.Size(1008, 601);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox3);
@@ -106,9 +104,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "BMFont字体文件转换器";  
             this.ResumeLayout(false);
             this.PerformLayout();
+
 
         }
 
